@@ -6,14 +6,11 @@ class Solution
     static int solveMeFirst(int a, int b)
     {
         // Hint: Type return a+b; below 
-        if (((1 <= a) && (a <= 1000)) && ((1 <= b) && (b <= 1000)))
+        if ((1 <= a && a <= 1000) && (1 <= b && b <= 1000))
         {
             return a + b;
         }
-        else
-        {
-            return 0;
-        }
+        return 0;
     }
     static void Main(String[] args)
     {
