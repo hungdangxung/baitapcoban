@@ -21,16 +21,16 @@ class Result
      */
     public static int birthdayCakeCandles(List<int> candles)
     {
-        int dem = 0;
+        int count = 0;
         long max = candles.Max();
         for (int i = 0; i < candles.Count; i++)
         {
             if (candles[i] == max)
             {
-                dem++;
+                count++;
             }
         }
-        return dem;
+        return count;
     }
 }
 class Solution
