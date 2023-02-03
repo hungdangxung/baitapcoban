@@ -23,27 +23,26 @@ class Result
      */
     public static List<int> compareTriplets(List<int> a, List<int> b)
     {
-        int diemA = 0;
-        int diemB = 0;
+        int pointA = 0;
+        int pointB = 0;
         List<int> li = new List<int>();
         for (int i = 0; i < a.Count; i++)
         {
             if (a[i] > b[i])
             {
-                diemA++;
+                pointA++;
             }
             else if (a[i] < b[i])
             {
-                diemB++;
+                pointB++;
             }
             else
             {
-                diemA += 0;
-                diemB += 0;
+                continue;
             }
         }
-        li.Add(diemA);
-        li.Add(diemB);
+        li.Add(pointA);
+        li.Add(pointB);
         return li;
     }
 }
